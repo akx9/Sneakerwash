@@ -1,0 +1,183 @@
+.slider-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.before-image,
+.after-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: ew-resize;
+}
+
+
+.spashoes-media-slider .media-slider__item {
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.spashoes-media-slider .media-slider__item:hover {
+    opacity: 0.7;
+}
+
+.spashoes-media-slider .media-slider__item .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spashoes-media-slider .slick-dots {
+    bottom: -40px;
+}
+
+.spashoes-media-slider > .slick-dots > li > button {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+}
+
+.spashoes-media-slider > .slick-dots > li.slick-active > button {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+}
+
+.spashoes-media-slider > .slick-dots > li > button:before {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .spashoes-media-slider .slick-slide {
+        margin: 0 0.6rem;
+    }
+}
+
+.spashoes-media__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.spashoes-media__modal.show {
+    display: flex;
+}
+
+.spashoes-media__modal-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.spashoes-media__modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.spashoes-media__modal-document {
+    width: 100%;
+    max-width: 800px;
+    min-height: 400px;
+    z-index: 1;
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.spashoes-media__modal .embed-container {
+    box-sizing: border-box;
+    height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.spashoes-media__modal iframe {
+    box-sizing: border-box;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.spashoes-media__modal-btn-close {
+    background: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.spashoes-media__modal-btn-close:hover {
+    background: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.spashoes-media__modal-btn-close:focus {
+    background: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.spashoes-media__modal-btn-close:active {
+    background: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.spashoes-media__modal-btn-close svg {
+    fill: white;
+}

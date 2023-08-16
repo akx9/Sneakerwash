@@ -1,0 +1,29 @@
+.spashoes-services {
+
+}
+
+.spashoes-services .service__item {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: -1px 0 0 0;
+    background-color: white;
+    font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+    .spashoes-services .service__item {
+        padding: 0.8rem 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+.spashoes-services .service__item-title {
+    font-weight: bold;
+}
+
+.spashoes-services .service__item-price {
+    white-space: nowrap;
+}
