@@ -2337,7 +2337,7 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
     flex-grow: 1;
     flex-shrink: 1;
     align-self: auto;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 :is(.elementor-section-wrap, [data-elementor-id])>.e-con {
